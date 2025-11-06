@@ -6,6 +6,192 @@
     <title>Document</title>
 </head>
 <body>
-    Hello world!
+    <!-- File: index.html -->
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SMA KP BALEENDAH</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="branding">
+        <h1 class="school-name">SMA KP BALEENDAH</h1>
+        <p class="tagline">Berprestasi, Berkarakter, Berwawasan Lingkungan</p>
+      </div>
+      <nav class="main-nav">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#program">Program</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Selamat Datang di SMA KP BALEENDAH</h2>
+          <p>Sekolah menengah atas yang mengedepankan kualitas akademik dan keterampilan vokasi untuk generasi masa depan.</p>
+          <a class="btn" href="#about">Pelajari Lebih Lanjut</a>
+        </div>
+        <div class="hero-image">
+          <!-- Ganti src berikut dengan logo atau gambar sekolah Anda -->
+          <img src="https://via.placeholder.com/520x320?text=Gambar+Sekolah" alt="Gedung Sekolah SMA KP Baleendah">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h3>Tentang Sekolah</h3>
+      <p>SMA KP BALEENDAH berlokasi di Jalan Adipati Agung No. 32. Kami menyediakan lingkungan belajar yang mendukung perkembangan akademik dan karakter siswa melalui program kurikulum yang modern dan ekstrakurikuler yang variatif.</p>
+
+      <div class="card-grid">
+        <article class="card">
+          <h4>Visi</h4>
+          <p>Mencetak generasi mahasiswa yang berprestasi, kreatif, dan berakhlak mulia.</p>
+        </article>
+        <article class="card">
+          <h4>Misi</h4>
+          <ul>
+            <li>Meningkatkan kualitas pembelajaran.</li>
+            <li>Mendorong kegiatan keterampilan vokasi.</li>
+            <li>Memupuk karakter dan kepedulian sosial.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h4>Fasilitas</h4>
+          <p>Laboratorium, Perpustakaan, Lapangan olahraga, Ruang komputer, Bengkel praktik.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="program" class="program container">
+      <h3>Program Unggulan</h3>
+      <div class="program-list">
+        <div class="program-item">
+          <h5>Teknik Kendaraan Ringan</h5>
+          <p>Program vokasi untuk keterampilan mekanik dan perawatan kendaraan.</p>
+        </div>
+        <div class="program-item">
+          <h5>Teknik Komputer dan Jaringan</h5>
+          <p>Pembelajaran praktis jaringan, pemrograman dasar, dan troubleshooting.</p>
+        </div>
+        <div class="program-item">
+          <h5>Olah Raga & Seni</h5>
+          <p>Pengembangan bakat melalui ekstrakurikuler yang variatif.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h3>Kontak & Lokasi</h3>
+      <div class="contact-grid">
+        <div>
+          <h4>Alamat</h4>
+          <p>Jalan Adipati Agung No. 32<br>Baleendah, Kabupaten Bandung</p>
+        </div>
+        <div>
+          <h4>Jam Kerja</h4>
+          <p>Senin - Jumat: 07:00 - 15:00<br>Sabtu: 08:00 - 12:00</p>
+        </div>
+        <div>
+          <h4>Kontak</h4>
+          <p>Telp: (022) 1234-5678<br>Email: info@smakp-baleendah.sch.id</p>
+        </div>
+      </div>
+
+      <div class="map-placeholder">
+        <!-- Tempatkan embed Google Maps di sini jika diinginkan (ganti src dengan embed code) -->
+        <img src="https://via.placeholder.com/900x250?text=Map+Placeholder" alt="Peta Lokasi SMA KP Baleendah">
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> SMA KP BALEENDAH — Jalan Adipati Agung No. 32</p>
+      <p class="small">Dibuat dengan ❤️ untuk komunitas sekolah.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Set tahun otomatis di footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
+/* -------------------------------------------------- */
+/* File: styles.css                                   */
+/* Simpan file ini dengan nama styles.css di folder yang sama */
+/* -------------------------------------------------- */
+
+:root{
+  --bg: #f7fafc;
+  --primary: #2b6cb0;
+  --accent: #f97316;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --radius: 12px;
+  --max-width: 1100px;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+*{box-sizing: border-box}
+body{margin:0;background:var(--bg);color:#111;line-height:1.6}
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+
+.site-header{background:linear-gradient(90deg, rgba(43,108,176,0.95), rgba(41,121,255,0.9));color:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem}
+.branding .school-name{margin:0;font-size:1.25rem;letter-spacing:0.4px}
+.branding .tagline{margin:0;font-size:0.9rem;opacity:0.95}
+.main-nav a{color:rgba(255,255,255,0.95);text-decoration:none;margin-left:1rem;font-weight:600}
+.main-nav a:hover{text-decoration:underline}
+
+.hero{padding:2.5rem 0}
+.hero-inner{display:flex;gap:2rem;align-items:center}
+.hero-text{flex:1}
+.hero-text h2{margin:0 0 0.5rem;font-size:2rem}
+.hero-text p{margin:0 0 1rem;color:var(--muted)}
+.btn{display:inline-block;padding:0.6rem 1rem;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none;font-weight:600}
+.hero-image img{max-width:100%;border-radius:10px;box-shadow:0 6px 20px rgba(15,23,42,0.08)}
+
+.about{padding:2rem 0}
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
+.card{background:var(--card);padding:1rem;border-radius:var(--radius);box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+.card h4{margin-top:0}
+
+.program{padding:2rem 0}
+.program-list{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.program-item{background:var(--card);padding:1rem;border-radius:10px}
+
+.contact{padding:2rem 0}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.map-placeholder img{width:100%;border-radius:10px;margin-top:1rem}
+
+.site-footer{background:#0f1724;color:#cbd5e1;padding:1rem}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+.small{opacity:0.8;margin:0}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-inner{flex-direction:column}
+  .card-grid, .program-list, .contact-grid{grid-template-columns:1fr}
+  .header-inner{flex-direction:column;align-items:flex-start;gap:0.5rem}
+  .main-nav a{margin-left:0.5rem}
+}
+
+@media (max-width:480px){
+  .branding .school-name{font-size:1rem}
+  .hero-text h2{font-size:1.4rem}
+}
+
 </body>
 </html>
